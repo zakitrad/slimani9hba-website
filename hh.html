@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .button {
+            background-color: rgb(0, 17, 255);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz: سؤال عن سليماني</h1>
+
+    <p>سؤال: هل سليماني ولد قحبة؟</p>
+    <button class="button" onclick="checkAnswer(true)">YES</button>
+    <button class="button" onclick="checkAnswer(false)">NO</button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkAnswer(answer) {
+            var result = document.getElementById("result");
+            if (answer === true) {
+                result.textContent = "إجابة صحيحة";
+            } else {
+                result.textContent = "إجابة خاطئة";
+            }
+        }
+    </script>
+</body>
+</html>
+<p>zinou hh</p>
+
+
+
+
+
+
